@@ -19,8 +19,8 @@ let developerName = 'Maxim';
  console.log('developerName', developerName);
 //  Maxim не изменился, любой объект является ссылочным типом данных,и у него в любой ситуации сохраняется ссылка, а с другими типами данных, как строка, число, булево и другие - примитивы, у них нет ссылки и поэтому значение останется без изменения.
 // next example
-console.log({} ==={}); //false
-console.log([] === []); //false
+// console.log({} === {}); 
+// console.log([] === []);  false This condition will always return 'false' since JavaScript compares objects by reference, not value.
 // чтобы сравнивание объектов выводило true, нам нужно сравнивать ссылки
  console.log(Object.is({}, {})); // true
  console.log(Object.is([], [])); // true
